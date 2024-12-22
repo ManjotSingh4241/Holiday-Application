@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Restore the original ColorPickerView -->
+<!--    <com.flask.colorpicker.ColorPickerView-->
+<!--        android:id="@+id/color_picker_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+<!--        app:wheelType="FLOWER"-->
+<!--        app:density="12"-->
+<!--        app:lightnessSlider="true"-->
+<!--        app:alphaSlider="true"-->
+<!--        app:initialColor="@android:color/black" />-->
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:textAllCaps="false" />
+    <View
+        android:id="@+id/colorPreview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "7992910031",
+    "project_id": "christmas-373f7",
+    "storage_bucket": "christmas-373f7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7992910031:android:b0d8ce0c2d6756529fd7ba",
+        "android_client_info": {
+          "package_name": "com.netlifymanjot.christmas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0EYObhV_JchvBxkZRb1QSH65LmkiASUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

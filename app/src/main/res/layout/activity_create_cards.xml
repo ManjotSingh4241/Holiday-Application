@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/christmas_background"
+    tools:context=".CreateCards">
+
+    <!-- Card Canvas -->
+    <FrameLayout
+        android:id="@+id/cardCanvas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:clickable="false"
+        android:elevation="4dp"
+        android:focusable="false"
+        app:layout_constraintBottom_toTopOf="@+id/toolsLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Tools Layout -->
+    <LinearLayout
+        android:id="@+id/toolsLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/christmas_red"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Add Text -->
+        <ImageButton
+            android:id="@+id/btnAddText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Add Text"
+            android:src="@drawable/ic_add_text"
+            app:tint="@color/white" />
+
+        <!-- Add Image -->
+        <ImageButton
+            android:id="@+id/btnAddImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Add Image"
+            android:src="@drawable/ic_add_image"
+            app:tint="@color/white" />
+
+        <!-- Add Sticker -->
+        <ImageButton
+            android:id="@+id/btnAddSticker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Add Sticker"
+            android:src="@drawable/ic_add_sticker"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/btnChangeBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Change Background"
+            android:src="@drawable/ic_background"
+            app:tint="@color/white" />
+
+        <!-- Save -->
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_marginLeft="35sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Save"
+            android:src="@drawable/ic_save"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
